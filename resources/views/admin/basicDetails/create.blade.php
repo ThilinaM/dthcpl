@@ -41,6 +41,19 @@
                 <span class="help-block">{{ trans('cruds.basicDetail.fields.description_helper') }}</span>
             </div>
             <div class="form-group">
+                <div class="form-check {{ $errors->has('sms_serviceon') ? 'is-invalid' : '' }}">
+                    <input type="hidden" name="sms_serviceon" value="0">
+                    <input class="form-check-input" type="checkbox" name="sms_serviceon" id="sms_serviceon" value="1" {{ old('sms_serviceon', 0) == 1 ? 'checked' : '' }}>
+                    <label class="form-check-label" for="sms_serviceon">{{ trans('cruds.basicDetail.fields.sms_serviceon') }}</label>
+                </div>
+                @if($errors->has('sms_serviceon'))
+                    <div class="invalid-feedback">
+                        {{ $errors->first('sms_serviceon') }}
+                    </div>
+                @endif
+                <span class="help-block">{{ trans('cruds.basicDetail.fields.sms_serviceon_helper') }}</span>
+            </div>
+            <div class="form-group">
                 <button class="btn btn-danger" type="submit">
                     {{ trans('global.save') }}
                 </button>

@@ -29,6 +29,7 @@ class BasicDetail extends Model implements HasMedia
     protected $fillable = [
         'name',
         'description',
+        'sms_serviceon',
         'created_at',
         'updated_at',
         'deleted_at',

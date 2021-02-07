@@ -15,6 +15,7 @@ class CreateUserDetailsTable extends Migration
             $table->string('library_card_no')->nullable();
             $table->string('mobile')->nullable();
             $table->string('address')->nullable();
+            $table->boolean('sms_send')->default(0)->nullable();
             $table->timestamps();
             $table->softDeletes();
         });

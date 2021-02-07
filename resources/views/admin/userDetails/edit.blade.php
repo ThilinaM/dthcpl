@@ -61,6 +61,19 @@
                 <span class="help-block">{{ trans('cruds.userDetail.fields.address_helper') }}</span>
             </div>
             <div class="form-group">
+                <div class="form-check {{ $errors->has('sms_send') ? 'is-invalid' : '' }}">
+                    <input type="hidden" name="sms_send" value="0">
+                    <input class="form-check-input" type="checkbox" name="sms_send" id="sms_send" value="1" {{ $userDetail->sms_send || old('sms_send', 0) === 1 ? 'checked' : '' }}>
+                    <label class="form-check-label" for="sms_send">{{ trans('cruds.userDetail.fields.sms_send') }}</label>
+                </div>
+                @if($errors->has('sms_send'))
+                    <div class="invalid-feedback">
+                        {{ $errors->first('sms_send') }}
+                    </div>
+                @endif
+                <span class="help-block">{{ trans('cruds.userDetail.fields.sms_send_helper') }}</span>
+            </div>
+            <div class="form-group">
                 <button class="btn btn-danger" type="submit">
                     {{ trans('global.save') }}
                 </button>

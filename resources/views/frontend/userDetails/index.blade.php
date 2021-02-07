@@ -41,6 +41,9 @@
                                         {{ trans('cruds.userDetail.fields.address') }}
                                     </th>
                                     <th>
+                                        {{ trans('cruds.userDetail.fields.sms_send') }}
+                                    </th>
+                                    <th>
                                         &nbsp;
                                     </th>
                                 </tr>
@@ -65,6 +68,10 @@
                                         </td>
                                         <td>
                                             {{ $userDetail->address ?? '' }}
+                                        </td>
+                                        <td>
+                                            <span style="display:none">{{ $userDetail->sms_send ?? '' }}</span>
+                                            <input type="checkbox" disabled="disabled" {{ $userDetail->sms_send ? 'checked' : '' }}>
                                         </td>
                                         <td>
                                             @can('user_detail_show')

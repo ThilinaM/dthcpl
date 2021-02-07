@@ -40,6 +40,9 @@
                         {{ trans('cruds.userDetail.fields.address') }}
                     </th>
                     <th>
+                        {{ trans('cruds.userDetail.fields.sms_send') }}
+                    </th>
+                    <th>
                         &nbsp;
                     </th>
                 </tr>
@@ -101,6 +104,7 @@
 { data: 'library_card_no', name: 'library_card_no' },
 { data: 'mobile', name: 'mobile' },
 { data: 'address', name: 'address' },
+{ data: 'sms_send', name: 'sms_send' },
 { data: 'actions', name: '{{ trans('global.actions') }}' }
     ],
     orderCellsTop: true,

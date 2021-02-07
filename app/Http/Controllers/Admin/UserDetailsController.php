@@ -58,8 +58,11 @@ class UserDetailsController extends Controller
             $table->editColumn('address', function ($row) {
                 return $row->address ? $row->address : "";
             });
+            $table->editColumn('sms_send', function ($row) {
+                return '<input type="checkbox" disabled ' . ($row->sms_send ? 'checked' : null) . '>';
+            });
 
-            $table->rawColumns(['actions', 'placeholder']);
+            $table->rawColumns(['actions', 'placeholder', 'sms_send']);
 
             return $table->make(true);
         }

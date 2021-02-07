@@ -35,6 +35,9 @@
                             {{ trans('cruds.basicDetail.fields.description') }}
                         </th>
                         <th>
+                            {{ trans('cruds.basicDetail.fields.sms_serviceon') }}
+                        </th>
+                        <th>
                             &nbsp;
                         </th>
                     </tr>
@@ -60,6 +63,10 @@
                             </td>
                             <td>
                                 {{ $basicDetail->description ?? '' }}
+                            </td>
+                            <td>
+                                <span style="display:none">{{ $basicDetail->sms_serviceon ?? '' }}</span>
+                                <input type="checkbox" disabled="disabled" {{ $basicDetail->sms_serviceon ? 'checked' : '' }}>
                             </td>
                             <td>
                                 @can('basic_detail_show')

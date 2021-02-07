@@ -39,7 +39,7 @@
     <div class="row justify-content-center align-items-center">
         <div class="col-md-12">
 
-            <div class="card">
+            <div class="">
                 <div class="text-center">
                   <div><img src="img/logo.png" style="width: 100px;" alt=""></div>
 <div><label for="" class="text-value-lg"><b>Stay Safe! Trace & Beat COVID-19</b></label></div>
@@ -105,7 +105,9 @@
                             <div class="form-group">
                                 <button class="btn btn-danger" type="submit">
                                     {{ trans('global.save') }}
-                                </button>
+                                </button>                              
+                                   
+                               
                             </div>
                         </form>
                     </div>
@@ -119,6 +121,9 @@
         </div>
     </body>
     <footer>
-        <div class="text-center">Design and develop by <a href="https://thilinadharmasena.com/">Thilina Dharmasena </a></div> 
+        <div class="text-center" style=" position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;">Design and develop by <a href="https://thilinadharmasena.com/">Thilina Dharmasena </a></div> 
     </footer>
 </html>

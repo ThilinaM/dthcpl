@@ -12,6 +12,7 @@ class CreateBasicDetailsTable extends Migration
             $table->bigIncrements('id');
             $table->string('name')->nullable();
             $table->longText('description')->nullable();
+            $table->boolean('sms_serviceon')->default(0)->nullable();
             $table->timestamps();
             $table->softDeletes();
         });

@@ -63,6 +63,14 @@
                             {{ $userDetail->address }}
                         </td>
                     </tr>
+                    <tr>
+                        <th>
+                            {{ trans('cruds.userDetail.fields.sms_send') }}
+                        </th>
+                        <td>
+                            <input type="checkbox" disabled="disabled" {{ $userDetail->sms_send ? 'checked' : '' }}>
+                        </td>
+                    </tr>
                 </tbody>
             </table>
             <div class="form-group">

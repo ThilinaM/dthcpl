@@ -27,6 +27,7 @@ class UserDetail extends Model
         'created_at',
         'mobile',
         'address',
+        'sms_send',
         'updated_at',
         'deleted_at',
         'created_by_id',

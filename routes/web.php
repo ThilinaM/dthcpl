@@ -4,6 +4,7 @@
 
 Route::view('/', 'welcome');
 Route::post('/file', 'TrackController@store');
+Route::get('/file', 'TrackController@index');
 Auth::routes();
 
 
