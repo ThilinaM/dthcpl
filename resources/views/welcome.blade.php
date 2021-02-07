@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>Center Public library Hettipola</title>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -36,12 +36,12 @@
 
             <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
                 <div class="container">
-    <div class="row justify-content-center">
+    <div class="row justify-content-center align-items-center">
         <div class="col-md-12">
 
             <div class="card">
-                <div class="card-header">
-                    {{ trans('global.create') }} {{ trans('cruds.userDetail.title_singular') }}
+                <div class="text-center">
+                  <img src="img/logo.png" style="width: 100px;" alt="">
                 </div>
 
                 <div class="card-body">
