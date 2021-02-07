@@ -26,6 +26,7 @@ class UserDetail extends Model
         'library_card_no',
         'created_at',
         'mobile',
+        'address',
         'updated_at',
         'deleted_at',
         'created_by_id',

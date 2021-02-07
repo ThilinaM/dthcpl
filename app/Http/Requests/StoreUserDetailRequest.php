@@ -33,6 +33,10 @@ class StoreUserDetailRequest extends FormRequest
                 'string',
                 'nullable',
             ],
+            'address'         => [
+                'string',
+                'nullable',
+            ],
         ];
     }
 }

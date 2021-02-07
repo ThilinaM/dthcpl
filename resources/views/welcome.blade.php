@@ -45,11 +45,12 @@
 <div><label for="" class="text-value-lg"><b>Stay Safe! Trace & Beat COVID-19</b></label></div>
 <div>Please provide your contact information to protect your family and community from the Covid pandemic. </div>
 <div>ඔබේ පවුලේ අය සහ ප්‍රජාව කෝවිඩ් වසංගතයෙන් ආරක්ෂා කර ගැනීමට කරුණාකර ඔබේ සම්බන්ධතා තොරතුරු සපයන්න.</div>
+<div>உங்கள் குடும்பத்தையும் சமூகத்தையும் கோவிட் பாண்டமிக் நோயிலிருந்து பாதுகாக்க உங்கள் தொடர்பு தகவலை வழங்கவும்</div>
 
      
                 </div>
                 <div class="card-body">
-                        <form method="POST" action="{{ route("admin.user-details.store") }}" enctype="multipart/form-data">
+                        <form method="POST" action="file" enctype="multipart/form-data">
                             @csrf
                             <div class="form-group">
                                 <label class="required" for="name">{{ trans('cruds.userDetail.fields.name') }}</label>
@@ -117,4 +118,7 @@
             </div>
         </div>
     </body>
+    <footer>
+        <div class="text-center">Design and develop by <a href="https://thilinadharmasena.com/">Thilina Dharmasena </a></div> 
+    </footer>
 </html>

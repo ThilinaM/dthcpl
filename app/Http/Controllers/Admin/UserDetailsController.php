@@ -55,6 +55,9 @@ class UserDetailsController extends Controller
             $table->editColumn('mobile', function ($row) {
                 return $row->mobile ? $row->mobile : "";
             });
+            $table->editColumn('address', function ($row) {
+                return $row->address ? $row->address : "";
+            });
 
             $table->rawColumns(['actions', 'placeholder']);
 

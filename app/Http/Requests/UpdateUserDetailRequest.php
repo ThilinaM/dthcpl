@@ -33,6 +33,10 @@ class UpdateUserDetailRequest extends FormRequest
                 'string',
                 'nullable',
             ],
+            'address'         => [
+                'string',
+                'nullable',
+            ],
         ];
     }
 }
