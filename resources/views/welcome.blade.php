@@ -41,7 +41,12 @@
 
             <div class="card">
                 <div class="text-center">
-                  <img src="img/logo.png" style="width: 100px;" alt="">
+                  <div><img src="img/logo.png" style="width: 100px;" alt=""></div>
+<div><label for="" class="text-value-lg"><b>Stay Safe! Trace & Beat COVID-19</b></label></div>
+<div>Please provide your contact information to protect your family and community from the Covid pandemic. </div>
+<div>ඔබේ පවුලේ අය සහ ප්‍රජාව කෝවිඩ් වසංගතයෙන් ආරක්ෂා කර ගැනීමට කරුණාකර ඔබේ සම්බන්ධතා තොරතුරු සපයන්න.</div>
+
+     
                 </div>
 
                 <div class="card-body">
