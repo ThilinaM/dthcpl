@@ -14,6 +14,7 @@ class CreateUserDetailsTable extends Migration
             $table->string('nic')->nullable();
             $table->string('library_card_no')->nullable();
             $table->string('mobile')->nullable();
+            $table->string('address')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });

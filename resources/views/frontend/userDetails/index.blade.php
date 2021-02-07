@@ -38,6 +38,9 @@
                                         {{ trans('cruds.userDetail.fields.mobile') }}
                                     </th>
                                     <th>
+                                        {{ trans('cruds.userDetail.fields.address') }}
+                                    </th>
+                                    <th>
                                         &nbsp;
                                     </th>
                                 </tr>
@@ -59,6 +62,9 @@
                                         </td>
                                         <td>
                                             {{ $userDetail->mobile ?? '' }}
+                                        </td>
+                                        <td>
+                                            {{ $userDetail->address ?? '' }}
                                         </td>
                                         <td>
                                             @can('user_detail_show')

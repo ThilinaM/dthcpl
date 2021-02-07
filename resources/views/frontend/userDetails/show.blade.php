@@ -58,6 +58,14 @@
                                         {{ $userDetail->mobile }}
                                     </td>
                                 </tr>
+                                <tr>
+                                    <th>
+                                        {{ trans('cruds.userDetail.fields.address') }}
+                                    </th>
+                                    <td>
+                                        {{ $userDetail->address }}
+                                    </td>
+                                </tr>
                             </tbody>
                         </table>
                         <div class="form-group">

@@ -37,6 +37,9 @@
                         {{ trans('cruds.userDetail.fields.mobile') }}
                     </th>
                     <th>
+                        {{ trans('cruds.userDetail.fields.address') }}
+                    </th>
+                    <th>
                         &nbsp;
                     </th>
                 </tr>
@@ -97,6 +100,7 @@
 { data: 'nic', name: 'nic' },
 { data: 'library_card_no', name: 'library_card_no' },
 { data: 'mobile', name: 'mobile' },
+{ data: 'address', name: 'address' },
 { data: 'actions', name: '{{ trans('global.actions') }}' }
     ],
     orderCellsTop: true,
