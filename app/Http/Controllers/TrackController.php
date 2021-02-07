@@ -29,7 +29,7 @@ class TrackController extends Controller
         $final =  $request->all() + ['sms_send' => '1'];        
         $userDetail = UserDetail::create($final);
         $session= $this->createSession('','esmsusr_n7p','2sh098c','');
-        $this->sendMessages($session,'HCPLibrary','Thank you for giving in the details StaySafe.',array($userDetail->mobile),1); // 1 for promotional messages, 0 for normal message 
+        $this->sendMessages($session,'HCPLibrary','Thank you for giving in the details Stay Safe.',array($userDetail->mobile),1); // 1 for promotional messages, 0 for normal message 
       $this->closeSession($session);
      }else{
         $final =  $request->all() + ['sms_send' => '0'];
