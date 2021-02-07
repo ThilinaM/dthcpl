@@ -19,7 +19,7 @@ class HomeController
             'filter_field'          => 'created_at',
             'filter_period'         => 'month',
             'group_by_field_format' => 'Y-m-d H:i:s',
-            'column_class'          => 'col-md-4',
+            'column_class'          => 'col-md-6',
             'entries_number'        => '5',
         ];
 
@@ -36,7 +36,7 @@ class HomeController
             'filter_field'          => 'created_at',
             'filter_period'         => 'year',
             'group_by_field_format' => 'Y-m-d H:i:s',
-            'column_class'          => 'col-md-4',
+            'column_class'          => 'col-md-6',
             'entries_number'        => '5',
         ];
 
@@ -82,7 +82,7 @@ class HomeController
             'filter_field'          => 'created_at',
             'filter_period'         => 'month',
             'group_by_field_format' => 'Y-m-d H:i:s',
-            'column_class'          => 'col-md-4',
+            'column_class'          => 'col-md-12',
             'entries_number'        => '5',
             'fields'                => [
                 'name'            => '',
